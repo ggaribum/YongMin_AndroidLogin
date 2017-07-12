@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yongmac.login_project.Login">
+
+
+    <Button
+        android:id="@+id/soccer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/com_facebook_auth_dialog_background"
+        android:text="Naver_해외축구"
+        android:layout_alignBottom="@+id/Naver"
+        android:layout_alignLeft="@+id/basket"
+        android:layout_alignStart="@+id/basket" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/com_facebook_auth_dialog_header_background"
+        android:text="Back"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="27dp" />
+
+    <Button
+        android:id="@+id/google"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/google"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/Naver"
+        android:layout_alignLeft="@+id/Naver"
+        android:layout_alignStart="@+id/Naver" />
+    <Button
+        android:id="@+id/Naver"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/naver"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Web Site"
+        android:textSize="30dp"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/back"
+        android:layout_alignLeft="@+id/Naver"
+        android:layout_alignStart="@+id/Naver" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/soccer"
+        android:layout_alignStart="@+id/soccer"
+        android:layout_alignTop="@+id/textView3"
+        android:text="자주 보는 사이트"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/basket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/com_facebook_auth_dialog_background"
+        android:text="Naver_농구"
+        android:layout_alignTop="@+id/google"
+        android:layout_toRightOf="@+id/google"
+        android:layout_toEndOf="@+id/google"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp" />
+
+</RelativeLayout>
